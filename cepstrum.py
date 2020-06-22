@@ -47,8 +47,8 @@ def frequency_analysis():
     #np.savetxt(filename_A+'cepstrum_real_before', cepstrum_real_A, delimiter = " ", fmt='%.5f')
     
     #包絡線を作成
-    cut_lifter = 100  #カットオフ指数。lifterはfilterの頭3文字ひっくり返した語。
-    cepstrum_real_A[cut_lifter:len(cepstrum_real_A) - cut_lifter] = 0  #ケプストラム波形の高次を0にする（低次のみを残す、ローパスリフター化）
+    cut_lifter = 100  #カットオフ指数。
+    cepstrum_real_A[cut_lifter:len(cepstrum_real_A) - cut_lifter] = 0  #ケプストラム波形の高次を0にする（低次のみを残す）
     #print('cepstrum_real_A_after',len(cepstrum_real_A))
     #np.savetxt(filename_A+'cepstrum_real_after', cepstrum_real_A, delimiter = " ", fmt='%.5f')
     cepstrum_low_A = np.fft.fft(cepstrum_real_A)
