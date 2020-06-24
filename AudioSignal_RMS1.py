@@ -83,7 +83,7 @@ while index_loop <= data_quantity:
     RMS_data.append(rms)
     index_loop += 1
 
-print('RMS_data', RMS_data)
+#print('RMS_data', RMS_data)
 average = sum(RMS_data) / len(RMS_data)
 print('RMS_average', average)
 
