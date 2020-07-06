@@ -33,9 +33,9 @@ def frequency_analysis():
     spectrum2_A[(frequency_A > cut_frequency)] = 0  #カットオフを超える周波数のデータをゼロにする（ノイズ除去）
 
     #周波数リスト
-    spectrum_A = spectrum_A[:int(spectrum_A.shape[0]/2 + 1)]    #スペクトルがマイナスになるスペクトル要素の削除
-    spectrum2_A = spectrum2_A[:int(spectrum2_A.shape[0]/2 + 1)]    #スペクトルがマイナスになるスペクトル要素の削除
-    frequency_A = frequency_A[:int(frequency_A.shape[0]/2 + 1)]    #周波数がマイナスになる周波数要素の削除
+    spectrum_A = spectrum_A[:int(spectrum_A.shape[0]/2)]    #スペクトルがマイナスになるスペクトル要素の削除
+    spectrum2_A = spectrum2_A[:int(spectrum2_A.shape[0]/2)]    #スペクトルがマイナスになるスペクトル要素の削除
+    frequency_A = frequency_A[:int(frequency_A.shape[0]/2)]    #周波数がマイナスになる周波数要素の削除
         
     #グラフ作成
     plt.subplot(2, 1, 1)
