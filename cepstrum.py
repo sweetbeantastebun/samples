@@ -54,9 +54,9 @@ def frequency_analysis():
     cepstrum_low_A = np.fft.fft(cepstrum_real_A)
  
     #グラフ作成準備
-    spectrum_A = spectrum_A[:int(spectrum_A.shape[0]/2 + 1)]    #スペクトルがマイナスになるスペクトル要素の削除
-    cepstrum_low_A = cepstrum_low_A[:int(cepstrum_low_A.shape[0]/2 + 1)]
-    frequency_A = frequency_A[:int(frequency_A.shape[0]/2 + 1)]    #周波数がマイナスになる周波数要素の削除    
+    spectrum_A = spectrum_A[:int(spectrum_A.shape[0]/2)]    #スペクトルがマイナスになるスペクトル要素の削除
+    cepstrum_low_A = cepstrum_low_A[:int(cepstrum_low_A.shape[0]/2)]
+    frequency_A = frequency_A[:int(frequency_A.shape[0]/2)]    #周波数がマイナスになる周波数要素の削除    
         
     #グラフ作成
     #plt.subplot(2, 1, 1)
