@@ -63,11 +63,11 @@ def Analytics_A():
     spectrum_dB_A = db(spectrum_A, 2e-5)
     
     #リファレンスデータの読み込み
-    reffrence_spectrum_filename = '/home/pi/Documents/admp441_data/202076_1141_48.919690spectrum'
+    reffrence_spectrum_filename = '/home/pi/Documents/admp441_data/****'
     reffrence_spectrum = np.loadtxt(reffrence_spectrum_filename,delimiter=",")
     reffrence_spectrum_dB = db(reffrence_spectrum, 2e-5)
     #print(reffrence_spectrum.read())
-    reffrence_frequency_filename = '/home/pi/Documents/admp441_data/202076_1141_48.919690frequency'
+    reffrence_frequency_filename = '/home/pi/Documents/admp441_data/*****'
     reffrence_frequency = np.loadtxt(reffrence_frequency_filename,delimiter=",")
     t6 = time.time()
     
